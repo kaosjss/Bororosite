@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publicar evento | Agenda Bororó do Oeste</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- CABEÇALHO E MENU -->
+    <header class="topo">
+        <div class="w3-content w3-flex topo-conteudo">
+            <a href="index.html" class="marca"><span>Agenda</span> Bororó do Oeste</a>
+            <nav class="w3-flex menu">
+                <a href="index.html">Início</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="cadastro.html">Seja organizador</a>
+                <a href="novo-evento.html" class="ativo">Publicar evento</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w3-content w3-container">
+        <h1>Publicar evento</h1>
+        <p>Use o e-mail do seu cadastro. Ainda não tem? <a href="cadastro.html">Cadastre-se aqui</a>.</p>
+
+        <!-- FORMULÁRIO DO EVENTO -->
+        <form class="w3-card w3-round-large w3-container w3-padding-24 cartao formulario" onsubmit="publicar(event)">
+            <div id="mensagem" aria-live="polite"></div>
+            <label>Seu e-mail de organizador <input class="w3-input w3-border w3-round" type="email" name="email" required></label>
+            <label>Título do evento <input class="w3-input w3-border w3-round" name="titulo" required></label>
+            <label>Categoria
+                <select class="w3-select w3-border w3-round" name="categoria" required>
+                    <option value="">Selecione</option><option>Feira</option><option>Show</option><option>Cultura</option><option>Outro</option>
+                </select>
+            </label>
+            <label>Data <input class="w3-input w3-border w3-round" type="date" name="data" required></label>
+            <label>Local <input class="w3-input w3-border w3-round" name="local" required></label>
+            <label>Breve descrição <textarea class="w3-input w3-border w3-round" name="descricao" rows="3" maxlength="300" required></textarea></label>
+            <button class="botao botao-azul">Publicar</button>
+        </form>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape w3-center w3-padding-24">Agenda Bororó do Oeste · 2026</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

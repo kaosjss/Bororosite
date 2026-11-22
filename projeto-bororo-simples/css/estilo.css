@@ -1,0 +1,46 @@
+/* ===== GERAL ===== */
+body { font-family: 'Nunito', sans-serif; background: #0a0e1a; color: #e6e9f0; color-scheme: dark; }
+h1, h2, h3 { font-weight: 700; color: #fff; }
+main a, .marca span { color: #4da3ff; }
+a:focus, button:focus, .w3-input:focus, .w3-select:focus { outline: 3px solid #fff; outline-offset: 2px; }
+
+/* ===== CABEÇALHO E MENU ===== */
+.topo { background: #000; border-bottom: 1px solid #1f2637; }
+.topo-conteudo { align-items: center; flex-wrap: wrap; gap: 8px; padding: 12px 16px; }
+.marca { color: #fff; font-size: 1.3rem; font-weight: 700; text-decoration: none; }
+.menu { margin-left: auto; flex-wrap: wrap; gap: 4px; }
+.menu a { color: #e6e9f0; text-decoration: none; padding: 6px 14px; border-radius: 20px; }
+.menu a:hover { background: rgba(255, 255, 255, 0.12); }
+.menu a.ativo { background: #fff; color: #0a0e1a; font-weight: 700; }
+
+/* ===== BANNER DA PÁGINA INICIAL ===== */
+.banner { background: linear-gradient(135deg, #00439c, #0070d1 60%, #1b1f3b); padding: 64px 0; margin-bottom: 24px; }
+.banner h1 { font-size: 2.2rem; }
+
+/* ===== BOTÕES ===== */
+.botao { display: inline-block; padding: 10px 22px; margin: 8px 8px 0 0; border: none; border-radius: 30px;
+         font-family: inherit; font-size: 1rem; font-weight: 700; text-decoration: none; cursor: pointer; }
+.botao:hover { opacity: 0.85; }
+.botao-branco { background: #fff; color: #0a0e1a; }
+.botao-contorno { border: 2px solid #fff; color: #fff; }
+.botao-azul { background: #0070d1; color: #fff; }
+
+/* ===== CARDS ===== */
+.grade { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.cartao { background: #161c2c; border: 1px solid #252d42; overflow-wrap: anywhere; }
+.cartao h2 { font-size: 1.4rem; }
+
+/* ===== FORMULÁRIOS ===== */
+.formulario { max-width: 600px; }
+form label { display: block; font-weight: 700; margin-top: 14px; }
+.w3-input, .w3-select { background: #0f1422; color: #fff; font-weight: 400; border-color: #2f3850 !important; }
+.filtro { max-width: 250px; margin-bottom: 20px; }
+
+/* ===== RODAPÉ ===== */
+.rodape { background: #000; color: #a0a8b8; border-top: 1px solid #1f2637; margin-top: 48px; }
+
+/* ===== CELULAR (telas até 600px) ===== */
+@media (max-width: 600px) {
+    .menu { margin-left: 0; width: 100%; justify-content: center; }
+    .banner h1 { font-size: 1.7rem; }
+}

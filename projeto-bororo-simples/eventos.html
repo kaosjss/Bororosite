@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eventos | Agenda Bororó do Oeste</title>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- CABEÇALHO E MENU -->
+    <header class="topo">
+        <div class="w3-content w3-flex topo-conteudo">
+            <a href="index.html" class="marca"><span>Agenda</span> Bororó do Oeste</a>
+            <nav class="w3-flex menu">
+                <a href="index.html">Início</a>
+                <a href="eventos.html" class="ativo">Eventos</a>
+                <a href="cadastro.html">Seja organizador</a>
+                <a href="novo-evento.html">Publicar evento</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="w3-content w3-container">
+        <h1>Próximos eventos</h1>
+
+        <!-- FILTRO POR CATEGORIA -->
+        <label for="filtro">Filtrar por categoria:</label>
+        <select class="w3-select w3-border w3-round filtro" id="filtro" onchange="mostrarEventos()">
+            <option>Todas</option><option>Feira</option><option>Show</option><option>Cultura</option><option>Outro</option>
+        </select>
+
+        <!-- LISTA DE EVENTOS (o JavaScript coloca os cards aqui) -->
+        <div id="lista-eventos" class="w3-grid grade"></div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape w3-center w3-padding-24">Agenda Bororó do Oeste · 2026</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
